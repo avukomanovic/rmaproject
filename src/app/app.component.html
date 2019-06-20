@@ -1,0 +1,204 @@
+<div id="form">
+	<div id="Back_DIV" class="container">
+		<div id="HEADER_DIV" class="col-md-12 ">
+			<h1 id="RETURN">Return form / RMA</h1>
+			<p id="Paragraph">
+				You will always receive a return confirmation number
+				from us (return material authorization number), which allows
+				you to return merchandise. Please include a copy of your sales
+				receipt and defect description with your package. The device must
+				be returned to us in the condition in which it was sent out. Please
+				include the box, charger cable, headset, battery and operating manual.
+				Please note that water damage or mechanically caused damages
+				are not covered by the warranty.
+			</p>
+		</div>
+		<div class="app flex-row align-items-center" style="opacity: 1;">
+			<div>
+				<div class="row justify-content-center" id="RAZMAK" style="margin-top:300px">
+					<div class="col-md-8">
+						<div class="card-group mb-4">
+							<div class="card p-5" style="overflow: auto;">
+								<div class="card-block">
+									<div id="DIV_1">
+										<div id="DIV_2">
+											<label for="rma-client_number" id="LABEL_3">
+												Client Number
+											</label>
+											<div id="DIV_4">
+												Optional
+											</div>
+											<input class="form-control" type="text" id="INPUT_5"
+												name="Rma[client_number]" placeholder="Enter your Client Number" />
+										</div>
+										<div id="DIV_7" class="col-md-12" style="margin-left: 0px;margin-right: 0px">
+											<label for="rma-company_name" id="LABEL_8">
+												Company Name
+											</label>
+											<input class="form-control" type="text" id="INPUT_9"
+												name="Rma[company_name]" placeholder="Enter your Company Name" />
+										</div>
+										<div id="DIV_11" class="col-md-6">
+											<label for="rma-email" id="LABEL_12">
+												E-Mail Address
+											</label>
+											<input class="form-control" type="email" id="INPUT_13" name="Rma[email]"
+												placeholder="Enter your E-Mail Address" />
+										</div>
+										<div id="DIV_15" class="col-md-6">
+											<label for="rma-contact_name" id="LABEL_16">
+												Contact Person
+											</label>
+											<div id="DIV_17">
+												Optional
+											</div>
+											<input class="form-control" type="text" id="INPUT_18"
+												name="Rma[contact_name]" placeholder="Enter Contact Person Name" />
+										</div>
+										<div id="DIV_20">
+											<label for="rma-device_type" id="LABEL_21">
+												Type of Device
+											</label>
+											<input class="form-control" type="text" id="INPUT_22"
+												name="Rma[device_type]" placeholder="Enter your Type of Device" />
+										</div>
+										<div [formGroup]="modalForm" style="margin-top: 15px;">
+											<div id="Problem_DIV" formArrayName="items"
+												*ngFor="let item of modalForm.get('items').controls; let i = index;"
+												style="border:1px solid;border-radius: 5px; padding-top:15px;padding-bottom:10px;margin-top:5px">
+												<div [formGroupName]="i">
+													<button *ngIf="i!=0" id="Button_times" (click)="removeItem(i)"
+														class="btn btn-warning pointer pull-right"><i id="plus_icon"
+															class="fa fa-times"></i></button>
+													<div id="DIV_24">
+														<label for="rma-imei_numbers" id="LABEL_25">
+															IMEI Numbers (Serial Numbers)
+														</label>
+														<input type="text" class="form-control" id="INPUT_9"
+															formControlName="imeiNumber"
+															placeholder="Enter Imei Numbers" />
+													</div>
+													<div class="row" id="CHECK_DIV" style="padding-bottom:15px">
+														<div class="form-group mb-1 col-md-2" style="margin-left:15px">
+															<div class="custom-control custom-checkbox">
+																<input type="checkbox" formControlName="display"
+																	class="custom-control-input"
+																	[id]="'defaultUnchecked1'+i">
+																<label class="custom-control-label"
+																	[attr.for]="'defaultUnchecked1'+i">Display</label>
+															</div>
+														</div>
+														<div class="form-group mb-1 col-md-2" style="margin-left:15px">
+															<div class="custom-control custom-checkbox">
+																<input type="checkbox" formControlName="glass"
+																	class="custom-control-input"
+																	[id]="'defaultUnchecked2'+i">
+																<label class="custom-control-label"
+																	[attr.for]="'defaultUnchecked2'+i">Glass</label>
+															</div>
+														</div>
+														<div class="form-group mb-1 col-md-2" style="margin-left:15px">
+															<div class="custom-control custom-checkbox">
+																<input type="checkbox" formControlName="camera"
+																	class="custom-control-input"
+																	[id]="'defaultUnchecked3'+i">
+																<label class="custom-control-label"
+																	[attr.for]="'defaultUnchecked3'+i">Camera</label>
+															</div>
+														</div>
+														<div class="form-group mb-1 col-md-2" style="margin-left:15px">
+															<div class="custom-control custom-checkbox">
+																<input type="checkbox" formControlName="batery"
+																	class="custom-control-input"
+																	[id]="'defaultUnchecked4'+i">
+																<label class="custom-control-label"
+																	[attr.for]="'defaultUnchecked4'+i">Battery</label>
+															</div>
+														</div>
+														<div class="form-group mb-1 col-md-2" style="margin-left:15px">
+															<div class="custom-control custom-checkbox">
+																<input type="checkbox" formControlName="mic"
+																	class="custom-control-input"
+																	[id]="'defaultUnchecked5'+i">
+																<label class="custom-control-label"
+																	[attr.for]="'defaultUnchecked5'+i">Microphone</label>
+															</div>
+														</div>
+														<div class="form-group mb-1 col-md-2" style="margin-left:15px">
+															<div class="custom-control custom-checkbox">
+																<input type="checkbox" formControlName="sounds"
+																	class="custom-control-input"
+																	[id]="'defaultUnchecked6'+i">
+																<label class="custom-control-label"
+																	[attr.for]="'defaultUnchecked6'+i">Speaker</label>
+															</div>
+														</div>
+														<div class="form-group mb-1 col-md-2" style="margin-left:15px">
+															<div class="custom-control custom-checkbox">
+																<input type="checkbox" formControlName="conector"
+																	class="custom-control-input"
+																	[id]="'defaultUnchecked7'+i">
+																<label class="custom-control-label"
+																	[attr.for]="'defaultUnchecked7'+i">Connector</label>
+															</div>
+														</div>
+														<div class="form-group mb-1 col-md-2" style="margin-left:15px">
+															<div class="custom-control custom-checkbox">
+																<input (ngModal)="boxex[i].ostalo"
+																	formControlName="other" (change)="chageOther(i)"
+																	type="checkbox" class="custom-control-input"
+																	[id]="'defaultUnchecked8'+i">
+																<label class="custom-control-label"
+																	[attr.for]="'defaultUnchecked8'+i">Other</label>
+															</div>
+														</div>
+													</div>
+													<div id="DIV_28" *ngIf="boxex[i].ostalo">
+														<label for="TEXTAREA_30" id="LABEL_29">
+															Defect Description
+														</label>
+														<textarea rows="2" style="width: 90% !important"
+															id="TEXTAREA_30" formControlName="desc"
+															placeholder="Enter Defect Description"></textarea>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div id="DIV_BUTTON_PLUS" style="text-align:left">
+											<button id="Button_plus" (click)="addItem()"
+												class="btn btn-warning pointer"><i id="plus_icon"
+													class="fa fa-plus"></i></button>
+										</div>
+										<div class="col-md-6" id="DIV_32" style="padding-top:15px">
+											<label for="toReq" id="LABEL_34">
+												Sales Date
+											</label>
+											<input type="text" class="form-control" id="INPUT_35"
+												placeholder="Select Sales Date ..." />
+										</div>
+										<div id="DIV_39" class="col-md-6" style="padding-top:15px">
+											<label for="rma-invoice_number" id="LABEL_40">
+												Invoice Number
+											</label>
+											<div id="DIV_41">
+												Optional
+											</div>
+											<input type="text" class="form-control" id="INPUT_42"
+												name="Rma[invoice_number]" placeholder="Enter your Invoice Number" />
+										</div>
+										<div id="DIV_52" class="pull-right">
+											<button style="width:100px" type="submit" class="btn btn-warning pointer"
+												id="BUTTON_53">
+												Send
+											</button>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

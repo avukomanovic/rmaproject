@@ -1,0 +1,222 @@
+#Problem_DIV{
+    border-color: #ccc !important;
+    
+}
+#RETURN{
+text-align: center
+}
+
+.custom-control-label{
+   color: #456b8e
+}
+#LABEL_3, #LABEL_8, #LABEL_12, #LABEL_16, #LABEL_21, #DIV_17, #DIV_4,#LABEL_25,#LABEL_40,#LABEL_34,#DIV_4, #DIV_17, #DIV_41,#LABEL_29{
+    color: #8f9ca8;
+}
+#form{
+    background-color: #93838f14;
+}
+#HEADER_DIV{
+    margin-top: 70px !important;
+    max-width: 60% !important;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+#Paragraph{
+    text-align: justify;
+    font-size: 15px;
+}
+#DIV_4,#DIV_17,#DIV_41{
+    float: right;
+}
+#CHECK_DIV{
+font-size: 12px;
+
+}
+#LABEL_29{
+    margin-left: 25px;
+    width:100%
+}
+#TEXTAREA_30{
+     margin-left: 15px !important;
+    /* padding-right: 0px;
+     margin-right: 25px;  */
+     width:300px;
+     min-width:50px!important;
+     max-width:99.99%!important;
+
+}
+#DIV_BUTTON_PLUS{
+    margin-bottom: 7px;
+    margin-right: 5px;
+    text-align:right !important;
+}
+#Button_plus{
+    margin-top:10px
+}
+#LABEL_3,#LABEL_8,#LABEL_12,#LABEL_16,#LABEL_21,#DIV_17,#DIV_4{
+    margin-bottom: 10px;
+    margin-top:7px;
+    padding-top: 7px;
+}
+#LABEL_25{
+    margin-left:10px
+}
+#DIV_52{
+    margin-top:10px;
+}
+#Button_times{
+    background-color: #d86a6a ;
+    margin-bottom: 10px;
+    margin-right: 5px
+}
+#DIV_2{
+    width:300px;
+    min-width:50px!important;
+    max-width:99.99%!important;
+}
+/* .boxsizingBorder {
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+} */
+
+@media all and (max-width:1000px){
+    #RAZMAK{
+        margin-top:2px !important;
+    }
+     /* #TEXTAREA_30{
+        width:350px;
+    }  */
+    #Paragraph{
+        width: 160% !important;
+        margin-left: -30% !important
+    }
+}
+@media all and (max-width:850px){
+    #RAZMAK{
+        margin-top:2px !important;
+    }
+     /* #TEXTAREA_30{
+        width:350px;
+    }  */
+    #Paragraph{
+        width: 160% !important;
+        margin-left: -30% !important
+    }
+}
+@media all and (max-width:750px){
+    #RAZMAK{
+        margin-top:2px !important;
+    }
+     /* #TEXTAREA_30{
+        width:350px;
+    }  */
+    #Paragraph{
+        width: 160% !important;
+        margin-left: -30% !important
+    }
+}
+@media all and (max-width:600px){
+    #RAZMAK{
+        margin-top:2px !important;
+    }
+     /* #TEXTAREA_30{
+        width:350px;
+    }  */
+    #Paragraph{
+        width: 160% !important;
+        margin-left: -30%
+    }
+}
+@media all and (max-width:300px){
+
+    /* #TEXTAREA_30{
+        max-width:50px !important;
+        margin-left: 0px !important;
+    } */
+    #Paragraph{
+        width: 160% !important;
+        margin-left: -30%
+    }
+}
+
+@media all and (max-width:700px){
+
+    /* #TEXTAREA_30{
+        max-width:430px !important;
+        margin-left: 0px !important;
+    } */
+    #Paragraph{
+        width: 160% !important;
+        margin-left: -30%
+    }
+}
+@media all and(max-width:376px){
+    #HEADER_DIV{
+        max-width: 99.99% !important;
+    }
+    #Paragraph{
+        width: 160% !important;
+        margin-left: -30% !important;
+        margin-right: 10% !important;
+    }
+}
+@media all and (max-width:450px){
+
+    /* #TEXTAREA_30,#DIV_2{
+        max-width: 200px !important;
+        margin-left: 10px !important;
+
+    } */
+    #Paragraph{
+        width: 160% !important;
+        margin-left: -30%
+    }
+}
+@media all and (max-width:250px){
+    /* #TEXTAREA_30{
+        width:50px !important
+    } */
+    #Paragraph{
+        width: 160% !important;
+        margin-left: -30%
+    }
+}
+#DIV_24{
+    padding-left:15px;
+    padding-right:15px;
+    margin-bottom:15px
+}
+#DIV_7{
+    padding-left: 0px;
+    padding-right: 0px;
+}
+#DIV_11{
+    padding-left: 0px;
+    padding-right: 0px;
+}
+#DIV_15{
+    padding-right: 0px;
+    padding-left: 0px;
+
+}
+#DIV_32{
+    padding-left: 0px;
+    padding-right: 0px;
+}
+#DIV_39{
+    padding-right: 0px;
+    padding-left: 0px;
+
+}
+.form-group.mb-1.col-md-2{
+    padding-left: 15px !important;
+    padding-right: 0px !important;
+    padding-bottom: 5px
+}
+#DIV_20{
+    padding-bottom: 10px;
+    width:300px;
+    min-width:50px!important;
+    max-width:99.99%!important;
+}
