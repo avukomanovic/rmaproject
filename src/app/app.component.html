@@ -38,7 +38,7 @@
 											<input class="form-control" type="text" id="INPUT_9"
 												name="Rma[company_name]" placeholder="Enter your Company Name" />
 										</div>
-										<div id="DIV_11" class="col-md-6">
+										<div id="DIV_11" class="col-md-6" >
 											<label for="rma-email" id="LABEL_12">
 												E-Mail Address
 											</label>
@@ -169,12 +169,19 @@
 												class="btn btn-warning pointer"><i id="plus_icon"
 													class="fa fa-plus"></i></button>
 										</div>
-										<div class="col-md-6" id="DIV_32" style="padding-top:15px">
+									<div class="col-md-6" id="DIV_32" style="padding-top:15px">
 											<label for="toReq" id="LABEL_34">
 												Sales Date
 											</label>
-											<input type="text" class="form-control" id="INPUT_35"
-												placeholder="Select Sales Date ..." />
+											 <div class="form-group">
+												<div class='input-group date' id='datetimepicker1'>
+													<input type="text" class="form-control" id="INPUT_35"
+														placeholder="Select Sales Date ..." />
+													<span class="input-group-addon">
+														<span class="glyphicon glyphicon-calendar"></span>
+													</span>
+												</div>
+											</div> 
 										</div>
 										<div id="DIV_39" class="col-md-6" style="padding-top:15px">
 											<label for="rma-invoice_number" id="LABEL_40">

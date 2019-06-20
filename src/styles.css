@@ -192,21 +192,21 @@ font-size: 12px;
     padding-right: 0px;
 }
 #DIV_11{
-    padding-left: 0px;
-    padding-right: 0px;
+    padding-left: 0px !important;
+    padding-right: 2px;
 }
 #DIV_15{
     padding-right: 0px;
-    padding-left: 0px;
+    padding-left: 2px;
 
 }
 #DIV_32{
     padding-left: 0px;
-    padding-right: 0px;
+    padding-right: 2px;
 }
 #DIV_39{
     padding-right: 0px;
-    padding-left: 0px;
+    padding-left: 2px;
 
 }
 .form-group.mb-1.col-md-2{
